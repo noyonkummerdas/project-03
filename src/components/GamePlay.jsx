@@ -5,7 +5,7 @@ import RoleDice from './RoleDice'
 import { useState } from "react"
 const GamePlay = () => {
   const [selectedNumber, setSelectedNumber]= useState(1)
-  const [currentDice,setCurrentDice]=useState(1);
+  const [currentDice,setCurrentDice]=useState();
   const [score, steScore]= useState(0);
 
   const generateRandomNumber= (min,max)=> {

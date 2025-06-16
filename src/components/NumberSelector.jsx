@@ -17,7 +17,7 @@ const NumberSelector = ({selectedNumber, setSelectedNumber ,}) => {
             onClick={()=>setSelectedNumber(value)} // anunimus function ()=>
             key={i}
             >
-              {value}  //Pass the value
+              {value}
 
 
             </Box>        
