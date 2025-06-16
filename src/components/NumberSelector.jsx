@@ -9,17 +9,22 @@ const NumberSelector = ({selectedNumber, setSelectedNumber ,}) => {
       {
         numberArray.map((value,i)=> (
           
+          
             <Box
             isSelected={
               value == selectedNumber
             }
             onClick={()=>setSelectedNumber(value)} // anunimus function ()=>
             key={i}
-            >{value}</Box>
-            
+            >
+              {value}  //Pass the value
+
+
+            </Box>        
         ))
        
       }
+      
     </div>
     <p>Select Number</p>
     </NumberSelectorContainer>
@@ -47,6 +52,7 @@ display: grid;
 place-items: center;
 font-size: 24px;
 font-weight: 700;
+cursor: pointer;
 background-color:${(props)=>props.isSelected? "black": 'white'};
 color:${(props)=>!props.isSelected? "black": 'white'};
 `
